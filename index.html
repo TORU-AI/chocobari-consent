@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>施術同意書 - チョコバリ / ネクストパートナー株式会社</title>
+  <style>
+    @media print {
+      body { margin: 0; padding: 0; background: white; }
+      .no-print { display: none; }
+    }
+
+    body {
+      font-family: "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "MS Mincho", serif;
+      background: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+    }
+
+    .no-print {
+      margin-bottom: 20px;
+    }
+
+    .no-print button {
+      padding: 10px 30px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #2c5f8a;
+      color: white;
+      border: none;
+      border-radius: 4px;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      background: white;
+      padding: 18mm 22mm 22mm 22mm;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    /* 会社ヘッダー */
+    .company-header {
+      text-align: right;
+      font-size: 10pt;
+      margin-bottom: 6mm;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    .company-name {
+      font-size: 12pt;
+      font-weight: bold;
+    }
+
+    .store-name {
+      font-size: 11pt;
+      font-weight: bold;
+      color: #555;
+    }
+
+    /* タイトル */
+    .title {
+      text-align: center;
+      font-size: 22pt;
+      font-weight: bold;
+      letter-spacing: 0.5em;
+      margin-bottom: 6mm;
+      border-bottom: 2px solid #333;
+      padding-bottom: 4mm;
+    }
+
+    /* サービス説明 */
+    .service-info {
+      font-size: 10pt;
+      line-height: 1.9;
+      margin-bottom: 6mm;
+      padding: 4mm 6mm;
+      border: 1px solid #ccc;
+      background: #fafafa;
+      color: #444;
+    }
+
+    /* 本文 */
+    .intro {
+      font-size: 11pt;
+      line-height: 2;
+      margin-bottom: 6mm;
+    }
+
+    /* 日付・氏名エリア */
+    .signature-area {
+      font-size: 11pt;
+      margin-bottom: 8mm;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 4mm;
+    }
+
+    .sig-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0;
+    }
+
+    .sig-label {
+      white-space: nowrap;
+      margin-right: 3mm;
+    }
+
+    .sig-blank {
+      display: inline-block;
+      width: 55mm;
+      border-bottom: 1px solid #333;
+    }
+
+    /* 記 */
+    .ki {
+      text-align: center;
+      font-size: 13pt;
+      font-weight: bold;
+      margin-bottom: 6mm;
+      letter-spacing: 0.3em;
+    }
+
+    /* チェック項目テーブル */
+    .items {
+      font-size: 11pt;
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .items tr {
+      line-height: 3;
+    }
+
+    .items td.mark {
+      width: 6mm;
+      vertical-align: bottom;
+      white-space: nowrap;
+      padding-bottom: 2mm;
+    }
+
+    .items td.label {
+      white-space: nowrap;
+      vertical-align: bottom;
+      padding-bottom: 2mm;
+    }
+
+    .items td.blank-cell {
+      vertical-align: bottom;
+      padding-bottom: 2mm;
+      width: 100%;
+    }
+
+    .items td.suffix {
+      white-space: nowrap;
+      vertical-align: bottom;
+      padding-bottom: 2mm;
+    }
+
+    .underline {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #333;
+      min-width: 40mm;
+    }
+
+    /* フッター */
+    .footer {
+      position: absolute;
+      bottom: 12mm;
+      left: 22mm;
+      right: 22mm;
+      text-align: center;
+      font-size: 9pt;
+      color: #666;
+      border-top: 1px solid #ccc;
+      padding-top: 3mm;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="no-print">
+    <button onclick="window.print()">印刷する</button>
+  </div>
+
+  <div class="page">
+
+    <!-- 会社情報（右上） -->
+    <div class="company-header">
+      <span class="store-name">チョコバリ（chocobari）</span><br>
+      <span class="company-name">ネクストパートナー株式会社</span><br>
+      〒103-0027　東京都中央区日本橋1-13-1 WAW日本橋 3F
+    </div>
+
+    <!-- タイトル -->
+    <div class="title">施 術 同 意 書</div>
+
+    <!-- サービス説明 -->
+    <div class="service-info">
+      チョコバリ（chocobari）の美容鍼は、国家資格（はり師・きゅう師）を有する専門家が担当いたします。<br>
+      また、施術には東洋医学の知識を活用し、美しさを引き出す施術を行っております。
+    </div>
+
+    <!-- 本文 -->
+    <div class="intro">
+      私は施術について、以下の事項を確認・同意の上、施術を希望します。<br>
+      施術後万が一症状が悪化したり、何か不調が起きた場合でも自己責任といたします。
+    </div>
+
+    <!-- 日付・氏名 -->
+    <div class="signature-area">
+      <div class="sig-row">
+        <span class="sig-label">&nbsp;&nbsp;&nbsp;&nbsp;年&nbsp;&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;&nbsp;日</span>
+      </div>
+      <div class="sig-row">
+        <span class="sig-label">氏　名</span>
+        <span class="sig-blank">&nbsp;</span>
+      </div>
+    </div>
+
+    <!-- 記 -->
+    <div class="ki">記</div>
+
+    <!-- チェック項目（テーブルで揃える） -->
+    <table class="items">
+      <tr>
+        <td class="mark">〇</td>
+        <td class="label">持病の</td>
+        <td class="blank-cell"><span class="underline">&nbsp;</span></td>
+        <td class="suffix">がありますが、施術を希望します。</td>
+      </tr>
+      <tr>
+        <td class="mark">〇</td>
+        <td class="label">現在（病名）</td>
+        <td class="blank-cell"><span class="underline">&nbsp;</span></td>
+        <td class="suffix">のため通院中ですが、施術を希望します。</td>
+      </tr>
+      <tr>
+        <td class="mark">〇</td>
+        <td class="label">現在</td>
+        <td class="blank-cell"><span class="underline">&nbsp;</span></td>
+        <td class="suffix">ですが、施術を希望します。</td>
+      </tr>
+      <tr>
+        <td class="mark">〇</td>
+        <td class="label">その他</td>
+        <td class="blank-cell" colspan="2"><span class="underline">&nbsp;</span></td>
+      </tr>
+    </table>
+
+    <!-- フッター -->
+    <div class="footer">
+      チョコバリ（chocobari）　ネクストパートナー株式会社　〒103-0027 東京都中央区日本橋1-13-1 WAW日本橋 3F
+    </div>
+
+  </div>
+
+</body>
+</html>
