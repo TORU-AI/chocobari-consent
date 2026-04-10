@@ -7,18 +7,22 @@
   <style>
     @page {
       size: A4;
-      margin: 0;
+      margin: 18mm 22mm;
     }
 
     @media print {
       body { margin: 0; padding: 0; background: white; }
       .no-print { display: none; }
       .page {
-        width: 210mm;
-        min-height: 297mm;
-        padding: 18mm 22mm 22mm 22mm;
+        width: 100%;
+        min-height: unset;
+        padding: 0;
         box-shadow: none;
         margin: 0;
+      }
+      .footer {
+        position: static;
+        margin-top: 16mm;
       }
     }
 
