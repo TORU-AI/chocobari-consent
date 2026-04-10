@@ -5,9 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>施術同意書 - チョコバリ / ネクストパートナー株式会社</title>
   <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
     @media print {
       body { margin: 0; padding: 0; background: white; }
       .no-print { display: none; }
+      .page {
+        width: 210mm;
+        min-height: 297mm;
+        padding: 18mm 22mm 22mm 22mm;
+        box-shadow: none;
+        margin: 0;
+      }
     }
 
     body {
