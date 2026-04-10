@@ -11,14 +11,20 @@
     }
 
     @media print {
-      body { margin: 0; padding: 0; background: white; }
+      html, body {
+        margin: 0;
+        padding: 0;
+        background: white !important;
+        -webkit-print-color-adjust: exact;
+      }
       .no-print { display: none; }
       .page {
         width: 100%;
         min-height: unset;
         padding: 0;
-        box-shadow: none;
+        box-shadow: none !important;
         margin: 0;
+        background: white !important;
       }
       .footer {
         position: static;
