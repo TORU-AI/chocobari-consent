@@ -8,16 +8,6 @@
     @media print {
       body { margin: 0; padding: 0; background: white; }
       .no-print { display: none; }
-      .page {
-        width: 210mm;
-        min-height: 297mm;
-        padding: 18mm 22mm 22mm 22mm;
-        box-shadow: none;
-      }
-    }
-
-    * {
-      box-sizing: border-box;
     }
 
     body {
@@ -26,14 +16,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 16px;
-      margin: 0;
+      padding: 30px;
     }
 
     .no-print {
-      margin-bottom: 16px;
-      width: 100%;
-      max-width: 800px;
+      margin-bottom: 20px;
     }
 
     .no-print button {
@@ -47,30 +34,31 @@
     }
 
     .page {
-      width: 100%;
-      max-width: 800px;
+      width: 210mm;
+      min-height: 297mm;
       background: white;
-      padding: 24px 24px 80px 24px;
+      padding: 18mm 22mm 22mm 22mm;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      box-sizing: border-box;
       position: relative;
     }
 
     /* 会社ヘッダー */
     .company-header {
       text-align: right;
-      font-size: 13px;
-      margin-bottom: 16px;
+      font-size: 10pt;
+      margin-bottom: 6mm;
       line-height: 1.8;
       color: #333;
     }
 
     .company-name {
-      font-size: 15px;
+      font-size: 12pt;
       font-weight: bold;
     }
 
     .store-name {
-      font-size: 14px;
+      font-size: 11pt;
       font-weight: bold;
       color: #555;
     }
@@ -78,20 +66,20 @@
     /* タイトル */
     .title {
       text-align: center;
-      font-size: clamp(18px, 5vw, 26px);
+      font-size: 22pt;
       font-weight: bold;
-      letter-spacing: 0.4em;
-      margin-bottom: 16px;
+      letter-spacing: 0.5em;
+      margin-bottom: 6mm;
       border-bottom: 2px solid #333;
-      padding-bottom: 12px;
+      padding-bottom: 4mm;
     }
 
     /* サービス説明 */
     .service-info {
-      font-size: 13px;
+      font-size: 10pt;
       line-height: 1.9;
-      margin-bottom: 16px;
-      padding: 10px 14px;
+      margin-bottom: 6mm;
+      padding: 4mm 6mm;
       border: 1px solid #ccc;
       background: #fafafa;
       color: #444;
@@ -99,119 +87,101 @@
 
     /* 本文 */
     .intro {
-      font-size: 14px;
+      font-size: 11pt;
       line-height: 2;
-      margin-bottom: 16px;
+      margin-bottom: 6mm;
     }
 
     /* 日付・氏名エリア */
     .signature-area {
-      font-size: 14px;
-      margin-bottom: 20px;
+      font-size: 11pt;
+      margin-bottom: 8mm;
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      gap: 10px;
+      gap: 4mm;
     }
 
     .sig-row {
       display: flex;
-      align-items: flex-end;
-      gap: 4px;
+      align-items: baseline;
+      gap: 0;
     }
 
     .sig-label {
       white-space: nowrap;
-      padding-bottom: 2px;
+      margin-right: 3mm;
     }
 
     .sig-blank {
       display: inline-block;
-      width: clamp(100px, 30vw, 200px);
+      width: 55mm;
       border-bottom: 1px solid #333;
-      min-height: 1em;
     }
 
     /* 記 */
     .ki {
       text-align: center;
-      font-size: 16px;
+      font-size: 13pt;
       font-weight: bold;
-      margin-bottom: 16px;
+      margin-bottom: 6mm;
       letter-spacing: 0.3em;
     }
 
-    /* チェック項目 */
+    /* チェック項目テーブル */
     .items {
-      font-size: 14px;
+      font-size: 11pt;
       width: 100%;
       border-collapse: collapse;
     }
 
     .items tr {
-      line-height: 2.8;
+      line-height: 3;
     }
 
     .items td.mark {
-      width: 20px;
+      width: 6mm;
       vertical-align: bottom;
       white-space: nowrap;
-      padding-bottom: 4px;
+      padding-bottom: 2mm;
     }
 
     .items td.label {
       white-space: nowrap;
       vertical-align: bottom;
-      padding-bottom: 4px;
-      padding-right: 4px;
+      padding-bottom: 2mm;
     }
 
     .items td.blank-cell {
       vertical-align: bottom;
-      padding-bottom: 4px;
+      padding-bottom: 2mm;
       width: 100%;
     }
 
     .items td.suffix {
       white-space: nowrap;
       vertical-align: bottom;
-      padding-bottom: 4px;
-      padding-left: 4px;
-      font-size: 13px;
+      padding-bottom: 2mm;
     }
 
     .underline {
       display: block;
       width: 100%;
       border-bottom: 1px solid #333;
-      min-width: 30px;
-    }
-
-    /* スマホ：suffixを折り返す */
-    @media (max-width: 480px) {
-      .items td.suffix {
-        white-space: normal;
-        font-size: 12px;
-      }
-      .items tr {
-        line-height: 2.4;
-      }
-      .title {
-        letter-spacing: 0.2em;
-      }
+      min-width: 40mm;
     }
 
     /* フッター */
     .footer {
       position: absolute;
-      bottom: 16px;
-      left: 24px;
-      right: 24px;
+      bottom: 12mm;
+      left: 22mm;
+      right: 22mm;
       text-align: center;
-      font-size: 10px;
+      font-size: 9pt;
       color: #666;
       border-top: 1px solid #ccc;
-      padding-top: 8px;
+      padding-top: 3mm;
     }
   </style>
 </head>
@@ -248,7 +218,7 @@
     <!-- 日付・氏名 -->
     <div class="signature-area">
       <div class="sig-row">
-        <span class="sig-label">　　年　　月　　日</span>
+        <span class="sig-label">&nbsp;&nbsp;&nbsp;&nbsp;年&nbsp;&nbsp;&nbsp;&nbsp;月&nbsp;&nbsp;&nbsp;&nbsp;日</span>
       </div>
       <div class="sig-row">
         <span class="sig-label">氏　名</span>
@@ -259,7 +229,7 @@
     <!-- 記 -->
     <div class="ki">記</div>
 
-    <!-- チェック項目 -->
+    <!-- チェック項目（テーブルで揃える） -->
     <table class="items">
       <tr>
         <td class="mark">〇</td>
